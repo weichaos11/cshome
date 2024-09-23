@@ -1,0 +1,101 @@
+site_name: Telink docs
+
+
+
+nav:
+  - software:
+    - index: index.md
+    - Tools:
+      - IDE:
+        - Telink_IoT_Studio: software/tools/telink_ide/Telink_IoT_Studio_User_Guide.md
+      - Download tool:
+        - BDT CMD: software/tools/cmd/BDT_CMD_User_Guide_English.md
+        - BDT GUI: software/tools/gui/BDT_GUI_User_Guide_English.md
+    - Handbook:
+      - SDK:
+        - driver sdk: software/sdk/driver/driver_sdk.md
+        - ble:
+          - b91_single_connection : software/sdk/ble/b91_single_connection/b91_single_connection.md
+  - openboard:
+    - Introduction: openboard/index.md
+    - Boards:  
+      - Mars: openboard/boards/mboard.md
+  - hardware:
+    - Introduction: openboard/index.md
+    - Boards:  
+      - Mars: openboard/boards/mboard.md
+  - opentool:
+    - Introduction: opentool/index.md
+    - web_bdt: opentool/web_bdt.md
+    - web_uart: opentool/web_uart.md
+    - web_ble: opentool/web_ble.md
+    - telink_script: opentool/telink_script.md
+  
+  
+theme:
+  name: material
+  logo: icons/primary_reversed_lg.png
+  favicon: icons/favicon.ico
+  palette: 
+    # Palette toggle for light mode
+    - scheme: telink
+      toggle:
+        icon: material/brightness-4 
+        name: Switch to dark mode
+    # Palette toggle for dark mode
+    - scheme: slate
+      toggle:
+        icon: material/brightness-7
+        name: Switch to light mode
+    
+    
+  features:
+    - navigation.top
+    - navigation.footer
+    - navigation.path
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.indexes
+    
+  language: zh
+
+
+markdown_extensions:
+  - admonition
+  - pymdownx.details
+  - pymdownx.superfences
+  - pymdownx.tabbed:
+      alternate_style: true 
+  - attr_list
+  - md_in_html
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - meta
+  - toc:
+      toc_depth: 2
+
+plugins:
+  - search
+  
+
+
+extra_css:
+  - stylesheets/extra.css
+
+
+extra:
+  generator: false
+  alternate:
+    - name: English
+      link: ../en/ 
+      lang: en
+    - name: 中文
+      link: ../zh/
+      lang: zh
+  
+  
+copyright: 沪ICP备17008231号-1 | 泰凌微电子版权所有 © 。保留所有权利。 2022
+
+
+
