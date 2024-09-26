@@ -1,63 +1,112 @@
-site_name: Telink docs
+site_name: C&S Cottage
 
 
 
 nav:
-  - software:
-    - index: index.md
-    - Tools:
-      - IDE:
-        - Telink_IoT_Studio: software/tools/telink_ide/Telink_IoT_Studio_User_Guide.md
-      - Download tool:
-        - BDT CMD: software/tools/cmd/BDT_CMD_User_Guide_English.md
-        - BDT GUI: software/tools/gui/BDT_GUI_User_Guide_English.md
-    - Handbook:
-      - SDK:
-        - driver sdk: software/sdk/driver/driver_sdk.md
-        - ble:
-          - b91_single_connection : software/sdk/ble/b91_single_connection/b91_single_connection.md
-  - openboard:
-    - Introduction: openboard/index.md
-    - Boards:  
-      - Mars: openboard/boards/mboard.md
-  - hardware:
-    - Introduction: openboard/index.md
-    - Boards:  
-      - Mars: openboard/boards/mboard.md
-  - opentool:
-    - Introduction: opentool/index.md
-    - web_bdt: opentool/web_bdt.md
-    - web_uart: opentool/web_uart.md
-    - web_ble: opentool/web_ble.md
-    - telink_script: opentool/telink_script.md
-  
-  
+  - 跳跳之家:
+    - Timeaxis: cscottage/index.md
+    - 校园记忆: cscottage/cscottage/xyjy.md
+    - 我们的窝: cscottage/cscottage/wenxinxiaowo.md
+    - 时光手账:
+      - 2017-10-14: cscottage/cscottage/richang.md
+  - 与君同游:
+    - 与君同游: trip/index.md
+    - 山东:
+      - 青岛: trip/shandong/qingdao.md
+      - 烟台: trip/shandong/yantai.md
+    - 江苏:
+      - 苏州: trip/jiangsu/suzhou.md
+      - 南京: trip/jiangsu/nanjing.md
+      - 无锡: trip/jiangsu/wuxi.md
+    #  - 南通:
+    - 云南:
+    #  - 昆明:
+      - 大理: trip/yunnan/dali.md
+      - 丽江: trip/yunnan/lijiang.md
+    - 海南:
+      - 三亚: trip/hainan/sanya.md
+    - 陕西: 
+      - 西安: trip/shanxi/xian.md
+    - 上海:
+      - 上海: trip/shanghai/shanghai.md
+    - 浙江:
+      - 杭州: trip/zhejiang/hangzhou.md
+      - 嵊泗列岛: trip/zhejiang/shengsi.md
+      - 乌镇: trip/zhejiang/wuzhen.md
+  - 诗情画意:
+    - 诗情画意: shihua/index.md
+    - 诗情:
+      - 鹊桥仙: shihua/shi/queqiaoxian.md
+      - 如果我是: shihua/shi/ruguowoshi.md
+      - 你说，你想去看海: shihua/shi/kanhai.md
+      - 盼暖春来: shihua/shi/pannuanchunlai.md
+      - 想有个房间: shihua/shi/fangjian.md
+      - 一剪梅: shihua/shi/yijianmei.md
+    #- 画意:
+  - 是博主呀:
+    - 是博主呀: shibozhuya/index.md
+    #- 哔哩哔哩:
+    - 抖音: shibozhuya/sbzy/douyin.md
+    #- 西瓜:
+    - 知乎: shibozhuya/sbzy/zhihu.md
+    #- 画吧:
+    - 哔哩哔哩: shibozhuya/sbzy/bilibili.md
+    
+      
 theme:
   name: material
-  logo: icons/primary_reversed_lg.png
-  favicon: icons/favicon.ico
+  custom_dir: docs/res/overrides
+  logo: res/icons/CSheart2.svg
+  favicon: res/icons/CSheart2.svg
   palette: 
+    # Palette toggle for automatic mode
+    - media: "(prefers-color-scheme)"
+      toggle:
+        icon: material/link
+        name: 关闭自动模式
     # Palette toggle for light mode
-    - scheme: telink
+    - media: "(prefers-color-scheme: light)"
+      scheme: default # 日间模式
+      primary: cyan # 主题颜色
+      accent: orange # 链接等可交互元件的高亮色
       toggle:
-        icon: material/brightness-4 
-        name: Switch to dark mode
+        icon: material/weather-sunny 
+        name: 切换至夜间模式 # 鼠标悬浮提示
     # Palette toggle for dark mode
-    - scheme: slate
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate # 夜间模式
+      primary: black # 主题颜色
+      accent: indigo
       toggle:
-        icon: material/brightness-7
-        name: Switch to light mode
-    
+        icon: material/weather-night 
+        name: 切换至日间模式 # 鼠标悬浮提示
+
     
   features:
     - navigation.top
     - navigation.footer
     - navigation.path
     - navigation.tabs
-    - navigation.tabs.sticky
+    #- navigation.tabs.sticky
     - navigation.indexes
-    
+    - toc.integrate
+    # - search.share
+    - search.highlight
+    - search.suggest
+    - announce.dismiss
+  
   language: zh
+  icon:
+    repo: heart #右上角图标fontawesome/brands/github
+    tag:
+      html: fontawesome/brands/html5
+      js: fontawesome/brands/js
+      css:  fontawesome/brands/css3
+      Mkdocs: octicons/tag-16    
+    
+# edit_uri: edit/main/docs # 编辑按钮跳转的链接 
+repo_url: https://space.bilibili.com/2069187267?spm_id_from=333.1007.0.0 # 右上角点击跳转的链接
+repo_name: 跳跳之家 # 右上角的名字
 
 
 markdown_extensions:
@@ -69,33 +118,65 @@ markdown_extensions:
   - attr_list
   - md_in_html
   - pymdownx.emoji:
-      emoji_index: !!python/name:materialx.emoji.twemoji
-      emoji_generator: !!python/name:materialx.emoji.to_svg
+      emoji_index: !!python/name:material.extensions.emoji.twemoji
+      emoji_generator: !!python/name:material.extensions.emoji.to_svg
+      #options:
+        #custom_icons:
+          #- docs/res/overrides/.icons
+  - pymdownx.arithmatex:
+      generic: true
   - meta
   - toc:
       toc_depth: 2
+  - def_list
+  - pymdownx.tasklist:
+      custom_checkbox: true
+
+extra_javascript:
+  - javascripts/katex.js
+  - https://unpkg.com/katex@0/dist/katex.min.js
+  - https://unpkg.com/katex@0/dist/contrib/auto-render.min.js
 
 plugins:
   - search
   
 
-
 extra_css:
-  - stylesheets/extra.css
+  - res/stylesheets/extra.css
+  - res/stylesheets/customize.css  #按钮圆角化
+  - res/stylesheets/bannerSlider.css
+  - https://cdn.jsdelivr.net/npm/lxgw-wenkai-lite-webfont@1.1.0/style.css
+  - https://unpkg.com/katex@0/dist/katex.min.css
 
 
 extra:
   generator: false
   alternate:
-    - name: English
-      link: ../en/ 
-      lang: en
+    #- name: English
+      #link: ../en/ 
+      #lang: en
     - name: 中文
       link: ../zh/
       lang: zh
+  social:
+    - icon: fontawesome/brands/bilibili
+      link: https://space.bilibili.com/2069187267?spm_id_from=333.1007.0.0
+      name: 一颗麦子呀
+    - icon: fontawesome/brands/tiktok
+      link: https://www.douyin.com/user/MS4wLjABAAAAXD3xE4ARhbdpqQvDvQPzN3oHenEyIBdWzGV5GYHRosqGUn8nvJuz1aoPVScoUCX1?from_tab_name=main&is_search=0&list_name=follow&nt=0
+      name: 是麦子呀
+    - icon: fontawesome/brands/tiktok
+      link: https://www.douyin.com/user/MS4wLjABAAAA3shEtLqFq7-HiGjmUL-4t_qiv4qn_aGLh2VGj0Cj7tFDu7Bt5x-hbZ_VCyhDfA4Z?from_tab_name=main&is_search=0&list_name=follow&nt=0
+      name: 麦子黄了
+    - icon: xigua2
+      link: https://www.ixigua.com/home/339097487425336/?list_entrance=search
+      name: 小麦子跳跳日食记
+    - icon: simple/zhihu #fontawesome/brands/zhihu
+      link: https://www.zhihu.com/people/zhi-yi-73-45
+      name: 只一
   
   
-copyright: 沪ICP备17008231号-1 | 泰凌微电子版权所有 © 。保留所有权利。 2022
+copyright: Copyright © 2024 跳跳之家版权所有 | 硕总专属
 
 
 

@@ -1,0 +1,55 @@
+/*@font-face {
+  font-family: "tlink";
+  src: url('../fonts/tlink.eot');
+  src: url('../fonts/tlink.eot') format('eot'),
+    url('../fonts/tlink.woff2') format('woff2'),
+    url('../fonts/tlink.woff') format('woff'),
+    url('../fonts/tlink.ttf') format('truetype'),
+    url('../fonts/tlink.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.tel:before {
+  display: inline-block;
+  font-family: "tlink";
+  font-style: normal;
+  font-weight: normal;
+  line-height: 1;
+  font-size: 14px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.tel-lg {
+  font-size: 26px;
+  line-height: 0.75em;
+  vertical-align: -15%;
+}
+.tel-2x { font-size: 2em; }
+.tel-3x { font-size: 3em; }
+.tel-4x { font-size: 4em; }
+.tel-5x { font-size: 5em; }
+.tel-fw {
+  width: 1.2857142857142858em;
+  text-align: center;
+}
+
+.tel-alert:before { content: "\EA01" }
+.tel-arrow-left:before { content: "\EA02" }
+.tel-arrow-right:before { content: "\EA03" }
+.tel-arrow-back:before { content: "\EA04" }
+.tel-case-study:before { content: "\EA05" }
+.tel-check:before { content: "\EA06" }
+.tel-chest-sheet:before { content: "\EA07" }
+.tel-close:before { content: "\EA08" }
+.tel-facebook:before { content: "\EA09" }
+.tel-hand:before { content: "\EA0A" }
+.tel-linkedin:before { content: "\EA0B" }
+.tel-plus:before { content: "\EA0C" }
+.tel-search:before { content: "\EA0D" }
+.tel-taobao:before { content: "\EA0E" }
+.tel-twitter:before { content: "\EA0F" }
+.tel-upload:before { content: "\EA10" }
+.tel-wechat:before { content: "\EA11" }
+.tel-whitepaper:before { content: "\EA12" }*/

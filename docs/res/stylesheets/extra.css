@@ -1,0 +1,314 @@
+.md-grid {
+  max-width: 90%; 
+}
+
+:root {
+  --md-primary-fg-color:        #EE0F0F;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+}
+
+[data-md-color-scheme="cs"] {
+  --md-primary-fg-color: #c05241;
+  --md-primary-fg-color--light: #ECB7B7;
+  --md-primary-fg-color--dark:  #90030C;
+	/*
+   // Color hue in the range [0,360] - change this variable to alter the tone
+  // of the theme, e.g. to make it more redish or greenish
+  --md-hue: 225deg;
+
+  // Default color shades
+  --md-default-fg-color:               hsla(0, 0%, 0%, 0.87);
+  --md-default-fg-color--light:        hsla(0, 0%, 0%, 0.54);
+  --md-default-fg-color--lighter:      hsla(0, 0%, 0%, 0.32);
+  --md-default-fg-color--lightest:     hsla(0, 0%, 0%, 0.07);
+  --md-default-bg-color:               hsla(0, 0%, 100%, 1);
+  --md-default-bg-color--light:        hsla(0, 0%, 100%, 0.7);
+  --md-default-bg-color--lighter:      hsla(0, 0%, 100%, 0.3);
+  --md-default-bg-color--lightest:     hsla(0, 0%, 100%, 0.12);
+
+  // Code color shades
+  --md-code-fg-color:                  hsla(200, 18%, 26%, 1);
+  --md-code-bg-color:                  hsla(200, 0%, 96%, 1);
+
+  // Code highlighting color shades
+  --md-code-hl-color:                  hsla(#{hex2hsl($clr-blue-a200)}, 1);
+  --md-code-hl-color--light:           hsla(#{hex2hsl($clr-blue-a200)}, 0.1);
+
+  // Code highlighting syntax color shades
+  --md-code-hl-number-color:           hsla(0, 67%, 50%, 1);
+  --md-code-hl-special-color:          hsla(340, 83%, 47%, 1);
+  --md-code-hl-function-color:         hsla(291, 45%, 50%, 1);
+  --md-code-hl-constant-color:         hsla(250, 63%, 60%, 1);
+  --md-code-hl-keyword-color:          hsla(219, 54%, 51%, 1);
+  --md-code-hl-string-color:           hsla(150, 63%, 30%, 1);
+  --md-code-hl-name-color:             var(--md-code-fg-color);
+  --md-code-hl-operator-color:         var(--md-default-fg-color--light);
+  --md-code-hl-punctuation-color:      var(--md-default-fg-color--light);
+  --md-code-hl-comment-color:          var(--md-default-fg-color--light);
+  --md-code-hl-generic-color:          var(--md-default-fg-color--light);
+  --md-code-hl-variable-color:         var(--md-default-fg-color--light);
+
+  // Typeset color shades
+  --md-typeset-color:                  var(--md-default-fg-color);
+
+  // Typeset `a` color shades
+  --md-typeset-a-color:                var(--md-primary-fg-color);
+
+  // Typeset `del` and `ins` color shades
+  --md-typeset-del-color:              hsla(6, 90%, 60%, 0.15);
+  --md-typeset-ins-color:              hsla(150, 90%, 44%, 0.15);
+
+  // Typeset `kbd` color shades
+  --md-typeset-kbd-color:              hsla(0, 0%, 98%, 1);
+  --md-typeset-kbd-accent-color:       hsla(0, 100%, 100%, 1);
+  --md-typeset-kbd-border-color:       hsla(0, 0%, 72%, 1);
+
+  // Typeset `mark` color shades
+  --md-typeset-mark-color:             hsla(#{hex2hsl($clr-yellow-a200)}, 0.5);
+
+  // Typeset `table` color shades
+  --md-typeset-table-color:            hsla(0, 0%, 0%, 0.12);
+  --md-typeset-table-color--light:     hsla(0, 0%, 0%, 0.035);
+
+  // Admonition color shades
+  --md-admonition-fg-color:            var(--md-default-fg-color);
+  --md-admonition-bg-color:            var(--md-default-bg-color);
+
+  // Warning color shades
+  --md-warning-fg-color:              hsla(0, 0%, 0%, 0.87);
+  --md-warning-bg-color:              hsla(60, 100%, 80%, 1);
+
+  // Footer color shades
+  --md-footer-fg-color:                hsla(0, 0%, 100%, 1);
+  --md-footer-fg-color--light:         hsla(0, 0%, 100%, 0.7);
+  --md-footer-fg-color--lighter:       hsla(0, 0%, 100%, 0.45);
+  --md-footer-bg-color:                hsla(0, 0%, 0%, 0.87);
+  --md-footer-bg-color--dark:          hsla(0, 0%, 0%, 0.32);
+
+  // Shadow depth 1
+  --md-shadow-z1:
+    0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.05),
+    0 0              #{px2rem(1px)}  hsla(0, 0%, 0%, 0.1);
+
+  // Shadow depth 2
+  --md-shadow-z2:
+    0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.1),
+    0 0              #{px2rem(1px)}  hsla(0, 0%, 0%, 0.25);
+
+  // Shadow depth 3
+  --md-shadow-z3:
+    0 #{px2rem(4px)} #{px2rem(10px)} hsla(0, 0%, 0%, 0.2),
+    0 0              #{px2rem(1px)}  hsla(0, 0%, 0%, 0.35);
+	*/
+}
+ 
+body {
+  font-family: "LXGW WenKai Lite", sans-serif;
+}
+
+button.md-top {
+  font-family: LXGW WenKai Lite; /* 修改字体 */
+  font-size: 16px; /* 修改字体大小 */
+  font-weight: bold; /* 修改字体粗细 */
+  color: #518FC1; /* 修改字体颜色 */
+}
+
+/*@font-face {  
+  font-family: 'MavenPro-Regular';  
+  src: url('font/MavenPro/MavenPro-Regular.ttf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {  
+  font-family: 'MavenPro-Bold';  
+  src: url('font/MavenPro/MavenPro-Bold.ttf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {  
+  font-family: 'abel-regular';  
+  src: url('font/Abel/abel-regular.ttf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-Bold';  
+  src: url('font/SourceHanSansCN/SourceHanSansCN-Bold.otf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-ExtraLight';  
+  src: url('font/SourceHanSansCN/SourceHanSansCN-ExtraLight.otf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-Heavy';  
+  src: url('font/SourceHanSansCN/SourceHanSansCN-Heavy.otf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-Light';  
+  src: url('font/SourceHanSansCN/SourceHanSansCN-Light.otf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-Medium';  
+  src: url('font/SourceHanSansCN/SourceHanSansCN-Medium.otf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-Normal';  
+  src: url('font/SourceHanSansCN/SourceHanSansCN-Normal.otf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-Regular';  
+  src: url('font/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: 'SourceHanSansCN-Regular';  
+  src: url('font/SourceHanSansCN/SourceHanSansCN-Regular.otf') format('truetype');  
+  font-weight: normal;  
+  font-style: normal;  
+}
+
+@font-face {
+  font-family: "tlink";
+  src: url('font/telink/tlink.eot');
+  src: url('font/telink/tlink.eot') format('eot'),
+    url('font/telink/tlink.woff2') format('woff2'),
+    url('font/telink/tlink.woff') format('woff'),
+    url('font/telink/tlink.ttf') format('truetype'),
+    url('font/telink/tlink.svg') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}*/
+
+
+/** {  
+  font-family: 'MavenPro-Regular';  
+} 
+
+h1 {
+  font-family: 'abel-regular';  
+} 
+
+p,li,span {
+    font-size: 16px;
+    font-family: "LXGW WenKai", sans-serif; 
+}*/
+
+.md-typeset__table {
+    width:auto;
+    display:table;
+    /*margin-left:auto;*/
+    margin-right:auto;
+}
+
+table {
+	  margin:auto;
+}
+
+th, td {
+    border: 1px solid var(--md-typeset-table-color);
+    border-spacing: 0;
+    border-bottom: none;
+    border-left: none;
+    border-top: none;
+    line-height:160%
+}
+
+.md-typeset__table {
+    line-height: 1;
+}
+
+.md-typeset__table table:not([class]) {
+    font-size: .74rem;
+    border-right: none;
+}
+
+.md-typeset__table table:not([class]) td,
+.md-typeset__table table:not([class]) th {
+    padding: 9px;
+}
+
+/* light mode alternating table bg colors */
+.md-typeset__table tr:nth-child(2n) {
+    background-color: #f8f8f8;
+}
+
+/* dark mode alternating table bg colors */
+[data-md-color-scheme="slate"] .md-typeset__table tr:nth-child(2n) {
+    background-color: hsla(var(--md-hue),25%,25%,1)
+}
+
+@keyframes heart {
+    0%, 40%, 80%, 100% {
+        transform: scale(1);
+    }
+    20%, 60% {
+        transform: scale(1.15);
+    }
+}
+.heart {
+    animation: heart 1000ms infinite;
+    color: red
+}
+
+.icon_blue {
+    color: #0f1eee;
+}
+
+:root {
+
+  --md-admonition-icon--pied-piper1: url("data:image/svg+xml,%3Csvg width='30.000000' height='30.000000' viewBox='0 0 30 30' fill='none' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink'%3E%3Cdesc%3E Created with Pixso. %3C/desc%3E%3Cdefs%3E%3CclipPath id='clip103_2030'%3E%3Crect id='icon' width='30.000000' height='30.000000' fill='white'/%3E%3C/clipPath%3E%3C/defs%3E%3Cg clip-path='url(%23clip103_2030)'%3E%3Cpath id='icon' d='M25.8 5.40002L25.8 24.6L4.20001 24.6L4.20001 5.40002L25.8 5.40002ZM9.60001 10.8L13.8 15L9.60001 19.2M15.6 19.2L21.6 19.2' stroke='%23101112' stroke-width='1.200000'/%3E%3C/g%3E%3C/svg%3E%0A");
+}
+
+.md-typeset .admonition.pied-piper1,
+.md-typeset details.pied-piper1 {
+  border-color: rgb(96, 141, 189);
+  font-size: large;
+  width: 100%;
+  /* border-radius:25px; */
+  border-bottom-left-radius: 25px;
+  border-bottom-right-radius: 25px;
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+}
+
+.md-typeset .pied-piper1>.admonition-title,
+.md-typeset .pied-piper1>summary {
+  background-color: linear-gradient(to right, rgba(238, 243, 254));
+  border-top-left-radius: 25px;
+  border-top-right-radius: 25px;
+  height: 45px;
+  width: auto;
+
+
+}
+
+.md-typeset .pied-piper1>.admonition-title::before,
+.md-typeset .pied-piper1>summary::before {
+  background-color: rgb(31, 31, 33);
+  -webkit-mask-image: var(--md-admonition-icon--pied-piper1);
+  mask-image: var(--md-admonition-icon--pied-piper1);
+}
