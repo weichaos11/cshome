@@ -1,3 +1,4 @@
+<html>
 <style>
     /* Application header should be static for the landing page */
     /*.md-header {
@@ -1136,5 +1137,5 @@ div {
       <span class="swiper-notification" aria-live="assertive" aria-atomic="true"></span></div>
     </div>
   </section>
-
+  </html>
 
