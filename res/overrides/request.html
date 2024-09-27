@@ -1,0 +1,53 @@
+
+{% extends "base.html" %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+  <link
+    rel="stylesheet"
+    href="{{ 'layui/css/layui.css' | url }}"
+  />
+{% endblock %}
+
+<!-- Theme-related JavaScript -->
+{% block scripts %}
+  <script src="{{ 'layui/layui.js' | url }}"></script>
+  <script>
+	layui.use(['form'], function(){
+		var form = layui.form;
+		var layer = layui.layer;
+		// 提交事件 todo:加个验证码功能
+		form.on('submit(demo2)', function(data){
+			var field = data.field; // 获取表单字段值
+			// layer.alert(JSON.stringify(field), {title: '当前填写的字段值'});
+            // 此处可执行 Ajax 等操作
+            var isVaild = true;
+            // todo: 先判断数据合法性
+            
+            if(isVaild){
+                var xmlhttp = new XMLHttpRequest();
+                xmlhttp.onreadystatechange = function() {
+                    if(4 == this.readyState && 200 == this.status) {
+                        if(this.responseText == 'success'){
+                            layer.msg('提交成功,审批通过后会给您回邮件');
+                            //setTimeout(function(){location.href = "https://debug.telink-semi.cn/bbs/";},2000);
+                        }
+                        else{
+                            layer.msg(this.responseText);
+                        }
+                    }
+                };
+                var url = `https://debug.telink-semi.cn:11113/insert_data?unit=${field.unit}&unit_name=${field.unit_name}&contacts=${field.contacts}&phone_number=${field.phone_number}&address=${field.address}&Email=${field.Email}&sample_name=${field.sample_name}&number=${field.number}&total_number=${field.total_number}&App_Plan=${field.App_Plan}`;
+                // console.log(url);
+                xmlhttp.open("post",url, true);
+                xmlhttp.send();
+            }
+            else{
+                
+            }
+		    return false; // 阻止默认 form 跳转
+        });
+
+    });
+  </script>
+{% endblock %}

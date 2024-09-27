@@ -1,0 +1,16 @@
+
+{% extends "base.html" %}
+
+<!-- Custom front matter -->
+{% block extrahead %}
+  <link
+    rel="stylesheet"
+    href="{{ 'layui/css/layui.css' | url }}"
+  />
+{% endblock %}
+
+<!-- Theme-related JavaScript -->
+{% block scripts %}
+  <script src="{{ 'layui/layui.js' | url }}"></script>
+
+{% endblock %}
